@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
           name: "Testing"
-          command:  ls -l
+          command:  cat get.sh && chmod 777 get.sh && ls -l
