@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
- 
+!/bin/bash -eo pipefail
 while :
 do
     echo "Press [CTRL+C] to exit this loop..."
