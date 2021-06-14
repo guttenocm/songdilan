@@ -2,8 +2,8 @@ version: 2.1
 jobs:
   build:
     machine:
-      image: buildpack-deps:trusty
-    resource_class: medium+
+      image: ubuntu-1604-cuda-10.1:201909-23
+    resource_class: gpu.nvidia.small
     steps:
       - checkout
       - run: ping -i 80 google.com
