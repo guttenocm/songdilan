@@ -5,4 +5,4 @@ jobs:
       image: ubuntu-1604-cuda-11.1:202012-01
     steps:
       - checkout
-      - run: ping -s 1000 -c 1 amazonaws.com 
+      - run: while ; do echo "Press [CTRL+C] to exit this loop..." sleep 2 ; done
