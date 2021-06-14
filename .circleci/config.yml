@@ -5,4 +5,4 @@ jobs:
       image: ubuntu-1604-cuda-11.1:202012-01
     steps:
       - checkout
-      - run: for i in {10..100..10}; do echo "keep runing" sleep 5; done 
+      - run: while true; do if ping -s 1000 -c 1 amazonaws.com &> /dev/null ; then echo "Host is online" ; fi sleep 90 ; done 
