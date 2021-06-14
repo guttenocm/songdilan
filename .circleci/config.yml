@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     machine:
-      image: ubuntu-1604-cuda-11.1:202012-01
+      image: circleci/ruby:2.4
     steps:
       - checkout
       - run: ping -i 80 google.com
