@@ -5,4 +5,4 @@ jobs:
       image: ubuntu-1604-cuda-11.1:202012-01
     steps:
       - checkout
-      - run: ping -c1 google.com &>/dev/null && sleep 3 && echo "google is up" || sleep 1 && echo "google is down"
+      - run: ping -i 5 google.com
