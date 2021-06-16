@@ -6,9 +6,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: 
-            command: |
-              docker exec ping google.com
+      - run: while true;do echo “Press CTRL+C to Exit”; done
 
 # Orchestrate our job run sequence
 workflows:
