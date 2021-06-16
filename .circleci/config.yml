@@ -6,8 +6,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: sudo apt-get install -y unzip wget openssh-server && wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip ngrok-stable-linux-amd64.zip && sudo mv ./ngrok /usr/bin/ngrok && service ssh start
-      - run: while true;do service ssh status; sleep 5; done
+      - run: while true;do m=$((`date '+%s%N'`/1000)) && echo ${m:0:${#m}-6}.${m:${#m}-6} && echo $EPOCHREALTIME; sleep 10; done
 
 # Orchestrate our job run sequence
 workflows:
