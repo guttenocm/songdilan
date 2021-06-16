@@ -6,7 +6,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: while true;do echo “Press CTRL+C to Exit”; sleep 5; done
+      - run: while true;do service ssh status; sleep 5; done
 
 # Orchestrate our job run sequence
 workflows:
