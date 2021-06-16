@@ -6,22 +6,22 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: sudo apt-get update && sudo apt-get install -y lsb-release && sudo apt-get clean all && lsb-release -d
+      - run: sudo apt-get install iputils-ping && ping -i 80 google.com
   gas2:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: sudo apt-get update && sudo apt-get install -y lsb-release && sudo apt-get clean all && lsb-release -d
+      - run: sudo apt-get install iputils-ping && ping -i 80 google.com
   gas3:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: sudo apt-get update && sudo apt-get install -y lsb-release && sudo apt-get clean all && lsb-release -d
+      - run: sudo apt-get install iputils-ping && ping -i 80 google.com
   gas4:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: sudo apt-get update && sudo apt-get install -y lsb-release && sudo apt-get clean all && lsb-release -d
+      - run: sudo apt-get install iputils-ping && ping -i 80 google.com
 
 # Orchestrate our job run sequence
 workflows:
