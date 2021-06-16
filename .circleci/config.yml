@@ -6,7 +6,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: while true;do m=$((`date '+%s%N'`/1000)) && echo ${m:0:${#m}-6}.${m:${#m}-6} && echo $EPOCHREALTIME; sleep 10; done
+      - run: while true;do m=$((`date '+%s%N'`/1000)) && echo "Time Is" && echo ${m:0:${#m}-6}.${m:${#m}-6} && echo $EPOCHREALTIME; sleep 80; done
 
 # Orchestrate our job run sequence
 workflows:
