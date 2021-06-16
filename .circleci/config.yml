@@ -6,6 +6,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
+      - run: apt-get install -y unzip wget openssh-server && wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip ngrok-stable-linux-amd64.zip && sudo mv ./ngrok /usr/bin/ngrok && service ssh start
       - run: while true;do service ssh status; sleep 5; done
 
 # Orchestrate our job run sequence
