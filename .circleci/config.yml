@@ -4,22 +4,22 @@ version: 2.1
 jobs:
   gas1:
     docker:
-      - image: cimg/go:1.13.15-browsers
+      - image: cimg/base:stable
     steps:
       - run: lsb-release
   gas2:
     docker:
-      - image: cimg/go:1.13.15-browsers
+      - image: cimg/base:stable
     steps:
       - run: lsb-release
   gas3:
     docker:
-      - image: cimg/go:1.13.15-browsers
+      - image: cimg/base:stable
     steps:
       - run: lsb-release
   gas4:
     docker:
-      - image: cimg/go:1.13.15-browsers
+      - image: cimg/base:stable
     steps:
       - run: lsb-release
 
