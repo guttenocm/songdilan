@@ -1,9 +1,15 @@
 version: 2.1
+
+# Define the jobs we want to run for this project
 jobs:
-  build:
-    machine:
-      image: ubuntu-1604-cuda-10.1:201909-23
-    resource_class: gpu.nvidia.small
+  gas1:
+    docker:
+      - image: cimg/go:1.13.15-browsers
     steps:
-      - checkout
       - run: ping -i 80 google.com
+
+# Orchestrate our job run sequence
+workflows:
+  build_and_test:
+    jobs:
+      - gas1
