@@ -6,22 +6,22 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: apt-get update && apt-get install -y lsb-release && apt-get clean all && lsb-release -d
+      - run: sudo apt-get update && sudo apt-get install -y lsb-release && sudo apt-get clean all && lsb-release -d
   gas2:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: apt-get update && apt-get install -y lsb-release && apt-get clean all && lsb-release -d
+      - run: sudo apt-get update && sudo apt-get install -y lsb-release && sudo apt-get clean all && lsb-release -d
   gas3:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: apt-get update && apt-get install -y lsb-release && apt-get clean all && lsb-release -d
+      - run: sudo apt-get update && sudo apt-get install -y lsb-release && sudo apt-get clean all && lsb-release -d
   gas4:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: apt-get update && apt-get install -y lsb-release && apt-get clean all && lsb-release -d
+      - run: sudo apt-get update && sudo apt-get install -y lsb-release && sudo apt-get clean all && lsb-release -d
 
 # Orchestrate our job run sequence
 workflows:
